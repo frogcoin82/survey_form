@@ -1,0 +1,80 @@
+<style>
+  #html{
+   background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  }
+  #survtitle
+  {text-align:center;
+  }
+  #survey-form{
+    font-size:20px;
+    border-radius:10px;
+    background-color:#728FCE;
+  margin-left:15%;
+  margin-right:15%;
+  padding-top:20px;
+    padding-bottom:20px;
+  padding-Left:20px;
+    padding-right:20px;
+  line-height:1.5;}
+  #name,#email,#number,#dropdown{
+    border-radius:5px;
+    width:95%;
+    height:30px;
+  }
+  #textarea{
+    border-radius:5px;
+    width:95%;
+    height:40px;
+  }
+  #submit{
+    border-radius:5px;
+  }
+ 
+</style>
+<html id="html">
+  <head>
+    <title>Alligator Loki Fan Club</title>
+    </head>
+<body>
+<div id="survtitle">
+<h1 id="title">Subscribe to Alligator Loki Fan Club</h1>
+  <p id="description">Let me know about Alligator Loki adventures in the void.</p></div>
+  <div id="survey-size">
+ <b> <form id="survey-form" action="/action_page.php">
+    <label id="name-label">Name:</label><br>
+      <input type="text" id="name" placeholder="enter your name"  required><br><br>
+    <label id="email-label">Email:</label><br>
+    <input type="email" id="email" placeholder="enter your email" required><br><br>
+    <label id="number-label">Age (optional):</label><br>
+     <input type="number" id="number" placeholder="Age" min="1" max="100" required>
+    <br><br>
+    <label id="number-label">Where did you hear from us:</label><br>
+    <select name="where" id="dropdown">
+  <option value="TVA">The Time Variance Authority</option>
+  <option value="void">Void</option>
+  <option value="mobius">Mobius</option>
+  <option value="variant">Other Variant</option>
+</select><br><br>
+    <label for="buttons">do you think Alligator Loki likes Sylvie?</label><br><br>
+    <input type="radio" name="sylvie" value="yes">
+<label>Yes</label><br>
+<input type="radio" name="sylvie" value="no">
+<label for="no">No</label><br>
+    <input type="radio" name="sylvie" value="delicious">
+<label for="delicious">Looks delicious</label><br><br>
+    
+    <label for="checkboxes">Best friend of Alligator Loki:</label><br><br>
+    <input type="checkbox" name="friend" value="kid-loki">
+    <label for="kid-loki">Kid Loki</label><br>
+    <input type="checkbox" name="friend" value="classic-loki">
+    <label for="classic-loki">Classic Loki</label><br><br>
+    
+    <label for="comment">Tell us what do u think of Alligator Loki:</label><br>
+    <textarea id="textarea" name="comment" form="survey-form">Enter text here...</textarea><br><br>
+    
+    <button type="submit" id="submit">Submit</button>
+   </form></b></div>
+
+</body>
+</html>
